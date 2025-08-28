@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Management System.</title>
+    <link rel="stylesheet" href="Inventory.css">
+	<!--uncomment this code to use the jQuery (if you want)-->
+	<script src="jquery-3.3.1.min.js"></script>
+    <script src="library_inv.js"></script>
+	<script src="Product.js"></script>
+		
+</head>
+<body>
+    <main>
+	<h1>Jimmy's Inventory Management</h1>
+	<fieldset>
+	<legend>Product Information</legend>
+        
+
+        <label>Product Code:</label>
+        <input type="text" id="prodCode"><br>         
+
+        <label>Product Name:</label>
+        <input type="text" id="prodName"><br>
+		
+		<label>Product Description:</label>
+        <input type="text" id="prodDesc"><br>
+        
+		<label>Price:</label>
+        <input type="text" id="price"><br>
+		
+		<label>Quantity on Hand:</label>
+        <input type="text" id="quantity"><br>
+        
+		<input type="button" value="Add Product" name="btnAdd" id="btnAdd">
+		<input type="button" value="Increase Quantity" name="btnIncrease" disabled id="btnIncrease">
+		<input type="button" value="Decrease Quantity" name="btnDecrease" disabled id="btnDecrease">
+		<input type="button" value="Clear" name="btnClear" id="btnClear">
+       
+		</fieldset>
+		<fieldset id="fldProdDetails" class="hide">
+		<legend>Product Details</legend>
+		<label class="boldLabel">Total Inventory($):</label><label id="lblTotal" class="labelValues">&nbsp;</label><BR/>
+		<label class="boldLabel">Product Added on:</label><label id="lblAdded" class="labelValues">&nbsp;</label><BR/>
+		
+		</fieldset>
+		&copy; Nick Taggart & Priscilla Nguyen
+    </main>
+	
+</body>
+</html>
